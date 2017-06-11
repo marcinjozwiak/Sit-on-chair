@@ -1,0 +1,204 @@
+/* general */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+}
+
+.conteiner {
+    width: 1400px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.row:after {
+    clear: both;
+}
+
+/* header */
+header {
+    width: 1400px;
+    height: 40px;
+    background: black;
+    margin: 0 auto;
+}
+
+header .logo a, ol, ul, li, a {
+    color: white;
+    font-size: 15px;
+    line-height: 40px;
+    text-decoration: none;
+    font-weight: 500;
+    list-style: none;
+}
+
+header .logo {
+    float: left;
+    margin-left: 60px;
+}
+
+header .logo span {
+    color: #27c7ab;
+    font-weight: 900;
+}
+
+header nav {
+    float: right;
+}
+
+header nav ol {
+    margin-right: 50px;
+    background: black;
+    float: right;
+}
+
+ol > li {
+    float: left;
+    width: 100px;
+    text-align: center;
+}
+
+ol > li > ul {
+    width: 100%;
+    background: black;
+    list-style-type: none;
+    display: none;
+    position: absolute;
+}
+
+ul a {
+    color: grey;
+}
+
+ol > li:hover {
+    background: #343434;
+}
+
+ol > li:hover > a {
+    color: grey;
+}
+
+ol > li:hover > ul {
+    display: block;
+    width: 100px;
+    color: grey;
+}
+
+ul > li:hover {
+
+    background: #525050;
+    border: 1px solid white;
+}
+
+ul > li:hover > a {
+    color: white;
+}
+
+/* Welcome */
+
+.welcome {
+    height: 500px;
+    width: 1400px;
+    margin: 0 auto;
+    background: rgba(255,255,255,1);
+    background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(219,219,219,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(100%, rgba(219,219,219,1)));
+    background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(219,219,219,1) 100%);
+    background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(219,219,219,1) 100%);
+    background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(219,219,219,1) 100%);
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(219,219,219,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#dbdbdb', GradientType=0 );
+}
+
+/* welcome - left and right arrows */
+.arrow-left, .arrow-right {
+    width: 15%;
+    height: 500px;
+    float: left;
+    line-height: 500px;
+    text-align: center;
+}
+
+.arrow-left a, .arrow-right a {
+    font-size: 80px;
+    color: #27c7ab;
+    font-weight: bolder;
+}
+
+.arrow-left a:hover, .arrow-right a:hover {
+    font-size: 100px;
+}
+
+.arrow-left a:active, .arrow-right a:active {
+    font-size: 80px;
+}
+
+/* welcome - foto */
+.foto {
+    width: 35%;
+    height: 500px;
+    background-image: url(../images/black_chair.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    float: left;
+}
+
+/* welcome - text */
+.text {
+    width: 35%;
+    height: 500px;
+    float: left;
+}
+
+h1, .button, p {
+    text-align: center;
+    margin-top: 40px;
+    padding: 0 20px;
+}
+
+ h1 {
+     font-size: 40px;
+     margin-top: 80px;
+     font-weight: 400;
+ }
+
+ .letters {
+     font-weight: 500;
+     color: #27c7ab;
+ }
+
+.button {
+    width: 300px;
+    height: 50px;
+    margin: 40px auto 0 auto;
+    border-radius: 10px;
+    background: #27c7ab;
+}
+
+.button a p {
+    margin: 0;
+    font-size: 20px;
+    line-height: 50px;
+    color: white;
+}
+
+.button:hover {
+    width: 310px;
+    height: 52px;
+    padding-top: 2px;
+    box-shadow: 0 0 20px 3px #27c7ab;
+}
+
+.button:active {
+    width: 300px;
+    height: 50px;
+    padding: 0;
+    box-shadow: 0 0 20px 3px #27c7ab;
+}
